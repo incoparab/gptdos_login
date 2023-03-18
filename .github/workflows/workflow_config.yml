@@ -18,4 +18,4 @@ jobs:
         pip install requests
         
     - name: login
-      run python src/login.py
+      run python src/login.py ${{ secrets.COOKIE }} ${{ secrets.PUSHKEY }}
