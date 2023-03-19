@@ -18,7 +18,7 @@ jobs:
     - name: Run Login Script
       env:
         ARG1: ${{ secrets.COOKIE }}
-        ARG2: ${{ secrets.KEY }}
+        ARG2: ${{ secrets.PUSH_KEY }}
       run: |
         cd src
         python login.py $ARG1 $ARG2
