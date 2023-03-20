@@ -35,12 +35,12 @@ def login():
         msg = 'cookie失效'
 
     key = sys.argv[2]
-    print(key)
+    # print(key)
     sendurl = 'http://www.pushplus.plus/send?token=' + key + '&title=GPTDOS消息' + '&content=' + str(
         msg)
-    print(sendurl)
+    # print(sendurl)
     requests.get(url=sendurl)
-    print(msg)
+    # print(msg)
 
 
 if __name__ == "__main__":
