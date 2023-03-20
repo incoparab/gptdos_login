@@ -1,7 +1,7 @@
 name: Run Login Script
 on:
   schedule:
-    - cron: '31 4 * * *' # 北京时间9:43
+    - cron: '43 1 * * *' # 北京时间9:43
 jobs:
   run-script:
     runs-on: ubuntu-latest
