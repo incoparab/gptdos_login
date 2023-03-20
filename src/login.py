@@ -14,7 +14,7 @@ def login():
     url = "https://gptdos.com/api/user/info"
     refer = "https://gptdos.com/chat"
     cookie = sys.argv[1]
-    print(cookie)
+    # print(cookie)
     user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
     requests.get(url=refer,
                  headers={
@@ -36,7 +36,7 @@ def login():
         msg = 'cookie失效'
 
     key = sys.argv[2]
-    print(key)
+    # print(key)
     sendurl = 'http://www.pushplus.plus/send?token=' + key + '&title=GPTDOS消息' + '&content=' + str(
         msg)
     # print(sendurl)
