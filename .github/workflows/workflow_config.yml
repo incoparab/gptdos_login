@@ -1,7 +1,7 @@
 name: Run Login Script
 on:
   schedule:
-    - cron: '43 1 * * *' # 北京时间9:43
+    - cron: '31 4 * * *' # 北京时间9:43
 jobs:
   run-script:
     runs-on: ubuntu-latest
@@ -21,4 +21,4 @@ jobs:
         ARG2: ${{ secrets.PUSH_KEY }}
       run: |
         cd src
-        python login.py $ARG2 $ARG1
+        python login.py $ARG1 $ARG2
