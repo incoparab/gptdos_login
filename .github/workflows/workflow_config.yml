@@ -21,4 +21,4 @@ jobs:
         ARG2: ${{ secrets.PUSH_KEY }}
       run: |
         cd src
-        python login.py $ARG1 $ARG2
+        python login.py $ARG2 $ARG1
