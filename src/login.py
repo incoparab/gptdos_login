@@ -2,7 +2,7 @@
 Author: fwz
 e-mail: wz-fu@qq.com
 Date: 2023-03-18 16:38:08
-LastEditTime: 2023-03-18 17:55:14
+LastEditTime: 2023-03-20 11:35:31
 Description: 自动签到gptdos
 '''
 import requests
@@ -35,10 +35,13 @@ def login():
         msg = 'cookie失效'
 
     key = sys.argv[2]
-    requests.get(url='https://api2.http://www.pushplus.plus/send?token=' +
-                 key + msg)
+    print(key)
+    sendurl = 'http://www.pushplus.plus/send?token=' + key + '&title=GPTDOS消息' + '&content=' + str(
+        msg)
+    print(sendurl)
+    requests.get(url=sendurl)
+    print(msg)
 
 
 if __name__ == "__main__":
     login()
-
