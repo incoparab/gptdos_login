@@ -2,7 +2,7 @@
 Author: fwz
 e-mail: wz-fu@qq.com
 Date: 2023-03-18 16:38:08
-LastEditTime: 2023-03-27 26:28:31
+LastEditTime: 2023-03-27 16:28:31
 Description: 自动签到gptdos
 '''
 import requests
